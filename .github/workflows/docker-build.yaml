@@ -9,9 +9,6 @@ on:
     tags:
       - v*
 
-env:
-  REGISTRY: ghcr.io
-
 jobs:
   build-main-image:
     runs-on: ${{ matrix.platform == 'linux/arm64' && 'ubuntu-24.04-arm' || 'ubuntu-latest' }}
